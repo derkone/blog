@@ -1,0 +1,23 @@
+spring:
+  thymeleaf:
+    mode: HTML
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:/static/
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 2258918901de
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: info
+    com.zzeng: debug
+  file: log/blog-dev.log
